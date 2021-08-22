@@ -1,4 +1,4 @@
-package job4j;
+package ru;
 
 public class Resp {
     private final String text;

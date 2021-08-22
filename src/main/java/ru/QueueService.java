@@ -1,4 +1,4 @@
-package job4j;
+package ru;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;

@@ -1,4 +1,4 @@
-package job4j;
+package ru;
 
 public interface Service {
     Resp process(Req req);

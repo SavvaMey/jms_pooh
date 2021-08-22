@@ -1,4 +1,4 @@
-package job4j;
+package ru;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -20,7 +20,7 @@ public class TopicService implements Service {
             var q = queue.putIfAbsent(req.theme(), new ConcurrentHashMap<>());
             if (q != null) {
                 var s = q.putIfAbsent(req.id(), new ConcurrentLinkedQueue<>());
-               if (s != null ) {
+               if (s != null) {
                    String text = q.get(req.id()).poll();
                    if (text == null) {
                        return new Resp("new messages are abscent", 200);
